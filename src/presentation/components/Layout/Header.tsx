@@ -27,12 +27,10 @@ export default function Header({ onCreateClick }: HeaderProps) {
       <Container maxWidth="lg">
         <Stack
           direction={{ xs: "column", md: "row" }}
-          justifyContent="space-between"
-          alignItems="center"
           spacing={3}
         >
           <Box>
-            <Stack direction="row" spacing={1} alignItems="center">
+            <Stack direction="row" spacing={1}>
               <SchoolIcon fontSize="large" />
               <Typography variant="h3" sx={{ fontWeight: 700 }}>
                 Учебный портал

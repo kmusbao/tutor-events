@@ -1,5 +1,5 @@
 /**
- * @file Use case: получение списка мероприятий (слой Application).
+ * Получение списка мероприятий (слой Application).
  */
 
 import type { EventItem } from "@/domain/entities/Event";

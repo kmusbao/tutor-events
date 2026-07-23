@@ -33,8 +33,6 @@ export default function EventCard({ event, onClick }: EventCardProps) {
       <CardContent>
         <Stack
           direction="row"
-          justifyContent="space-between"
-          alignItems="center"
           sx={{ mb: 2 }}
         >
           <Chip label={event.id} size="small" />
@@ -49,12 +47,12 @@ export default function EventCard({ event, onClick }: EventCardProps) {
         </Typography>
 
         <Stack spacing={1} sx={{ mt: 2 }}>
-          <Stack direction="row" spacing={1} alignItems="center">
+          <Stack direction="row" spacing={1} >
             <CalendarMonthIcon fontSize="small" />
             <Typography variant="body2">{event.dateTime}</Typography>
           </Stack>
 
-          <Stack direction="row" spacing={1} alignItems="center">
+          <Stack direction="row" spacing={1}>
             <GroupsIcon fontSize="small" />
             <Typography variant="body2">
               {event.attendees.length} участников

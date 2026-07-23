@@ -58,17 +58,19 @@ export default function EventDetailsModal({
       maxWidth="md"
       fullWidth
     >
-      <DialogTitle>
-        <Stack
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
+      <DialogTitle sx={{ position: "relative", pr: 6 }}>
+        Детали мероприятия
+        <IconButton
+          aria-label="close"
+          onClick={onClose}
+          sx={{
+            position: "absolute",
+            right: 8,
+            top: 8,
+          }}
         >
-          Детали мероприятия
-          <IconButton onClick={onClose}>
-            <CloseIcon />
-          </IconButton>
-        </Stack>
+          <CloseIcon />
+        </IconButton>
       </DialogTitle>
 
       <DialogContent>
@@ -92,7 +94,6 @@ export default function EventDetailsModal({
               {event.responsible.map((person) => (
                 <Chip
                   key={person}
-                  avatar={<Avatar>{person[0]}</Avatar>}
                   label={person}
                 />
               ))}

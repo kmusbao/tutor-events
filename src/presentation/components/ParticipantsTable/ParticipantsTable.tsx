@@ -3,7 +3,6 @@
  */
 
 import {
-  Avatar,
   Paper,
   Stack,
   Table,
@@ -42,8 +41,8 @@ export default function ParticipantsTable({
             <TableRow key={person.id}>
               <TableCell>{person.id}</TableCell>
               <TableCell>
-                <Stack direction="row" spacing={1} alignItems="center">
-                  <Avatar>{person.name[0]}</Avatar>
+                <Stack direction="row" spacing={1} >
+                  {person.name[0]}
                   {person.name}
                 </Stack>
               </TableCell>
